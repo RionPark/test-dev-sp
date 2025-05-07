@@ -19,11 +19,11 @@
 		WHERE UI_NUM = #{uiNum}
 	</delete>
 	
-	<select id="selectUserList" resultType="map">
+	<select id="selectUserList" resultType="com.dev.sp.vo.UserVO">
 		select * from USER_INFO
 	</select>
 	
-	<select id="selectUser" resultType="map">
+	<select id="selectUser" resultType="com.dev.sp.vo.UserVO">
 		select * from USER_INFO
 		WHERE UI_NUM = #{uiNum}
 	</select>
