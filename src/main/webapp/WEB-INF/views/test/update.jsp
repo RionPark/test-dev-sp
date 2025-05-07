@@ -9,10 +9,10 @@
 <body>
 <h3>등록</h3>
 <form method="POST" action="/test/update">
-	<input type="hidden" name="tiNum" value="${test.TI_NUM}">
-	<input type="text" name="tiName" value="#{test.TI_NAME}"><br>
-	<input type="text" name="tiPrice" value="#{test.TI_PRICE}"><br>
-	<input type="text" name="tiDesc" value="#{test.TI_DESC}"><br>
+	<input type="hidden" name="tiNum" value="${test.tiNum}">
+	<input type="text" name="tiName" value="${test.tiName}"><br>
+	<input type="text" name="tiPrice" value="${test.tiPrice}"><br>
+	<input type="text" name="tiDesc" value="${test.tiDesc}"><br>
 	<button>수정</button>
 </form>
 </body>

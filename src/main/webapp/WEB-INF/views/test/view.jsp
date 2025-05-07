@@ -8,27 +8,27 @@
 </head>
 <body>
 <form method="POST" action="/test/delete">
-<input type="hidden" name="tiNum" value="${test.TI_NUM}">
+<input type="hidden" name="tiNum" value="${test.tiNum}">
 <table border="1">
 	<tr>
 		<th>번호</th>
-		<td>${test.TI_NUM}</td>
+		<td>${test.tiNum}</td>
 	</tr>
 	<tr>
 		<th>이름</th>
-		<td>${test.TI_NAME}</td>
+		<td>${test.tiName}</td>
 	</tr>
 	<tr>
 		<th>가격</th>
-		<td>${test.TI_PRICE}</td>
+		<td>${test.tiPrice}</td>
 	</tr>
 	<tr>
 		<th>설명</th>
-		<td>${test.TI_DESC}</td>
+		<td>${test.tiDesc}</td>
 	</tr>
 	<tr>
 		<th colspan="2">
-			<button type="button" onclick="location.href='/test/update?tiNum=${test.TI_NUM}'">수정</button>
+			<button type="button" onclick="location.href='/test/update?tiNum=${test.tiNum}'">수정</button>
 			<button>삭제</button>
 		</th>
 	</tr>

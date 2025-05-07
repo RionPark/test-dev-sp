@@ -18,9 +18,9 @@
 	</tr>
 	<c:forEach items="${list}" var="test">
 	<tr>
-		<td>${test.TI_NUM}</td>
-		<td><a href="/test/view?tiNum=${test.TI_NUM}">${test.TI_NAME}</a></td>
-		<td>${test.TI_DESC}</td>
+		<td>${test.tiNum}</td>
+		<td><a href="/test/view?tiNum=${test.tiNum}">${test.tiName}</a></td>
+		<td>${test.tiDesc}</td>
 	</tr>
 	</c:forEach>
 </table>

@@ -1,12 +1,12 @@
 package com.dev.sp.service;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.dev.sp.mapper.TestMapper;
+import com.dev.sp.vo.TestVO;
 
 @Service
 public class TestService {
@@ -14,20 +14,20 @@ public class TestService {
 	@Autowired
 	private TestMapper tm;
 	
-	public List<Map<String,String>> getTestList(Map<String,String> map){
-		return tm.selectTestList(map);
+	public List<TestVO> getTestList(TestVO test){
+		return tm.selectTestList(test);
 	}
 	
-	public Map<String,String> getTest(int tiNum){
+	public TestVO getTest(int tiNum){
 		return tm.selectTest(tiNum);
 	}
 	
-	public int insertTest(Map<String,String> map){
-		return tm.insertTest(map);
+	public int insertTest(TestVO test){
+		return tm.insertTest(test);
 	}
 	
-	public int updateTest(Map<String,String> map){
-		return tm.updateTest(map);
+	public int updateTest(TestVO test){
+		return tm.updateTest(test);
 	}
 	
 	public int deleteTest(int tiNum){

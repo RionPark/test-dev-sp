@@ -19,11 +19,11 @@
 		WHERE TI_NUM = #{tiNum}
 	</delete>
 	
-	<select id="selectTestList" resultType="map">
+	<select id="selectTestList" resultType="com.dev.sp.vo.TestVO">
 		select * from TEST_INFO
 	</select>
 	
-	<select id="selectTest" resultType="map">
+	<select id="selectTest" resultType="com.dev.sp.vo.TestVO">
 		select * from TEST_INFO
 		WHERE TI_NUM = #{tiNum}
 	</select>
