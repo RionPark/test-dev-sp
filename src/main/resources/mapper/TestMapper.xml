@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.sp.mapper.TestMapper">
+	<insert id="insertTest">
+		insert into TEST_INFO(TI_NAME, TI_PRICE, TI_DESC)
+		values(#{tiName},#{tiPrice},#{tiDesc})
+	</insert>
+	
+	<update id="updateTest">
+		UPDATE TEST_INFO
+		SET TI_NAME=#{tiName},
+		TI_PRICE=#{tiPrice},
+		TI_DESC=#{tiDesc}
+		WHERE TI_NUM = #{tiNum}
+	</update>
+	
+	<delete id="deleteTest">
+		DELETE FROM TEST_INFO
+		WHERE TI_NUM = #{tiNum}
+	</delete>
+	
+	<select id="selectTestList" resultType="map">
+		select * from TEST_INFO
+	</select>
+	
+	<select id="selectTest" resultType="map">
+		select * from TEST_INFO
+		WHERE TI_NUM = #{tiNum}
+	</select>
+</mapper>
